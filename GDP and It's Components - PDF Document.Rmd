@@ -1,0 +1,75 @@
+---
+title: "GDP and It's Components - PDF"
+author: "Uday Khanna"
+date: "`r Sys.Date()`"
+output: 
+  pdf_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+```
+
+
+
+```{r libraries_needed}
+
+pacman::p_load(pacman,party, rio, tidyverse,tinytex )
+
+
+```
+
+# Introduction:
+
+## Macroeconomics Circular Flow of Income
+
+---
+
+International Trade play an important role in circular economy at a macroeconomic perspective. It is because of the reason that any activity that makes money out of the general circular flow (Household to business sector) is known as Leakage like tax, import, savings. On the other side, any activity that makes money into the general circular flow (Household to business sector) is known as injection like Government spending, export, investment.
+
+
+### Fig 1. Macroeconomics Circular Flow of Income
+```{r circular_flow_income_chart}
+knitr::include_graphics("C:/Users/91981/Desktop/Uday/Personal_analysis_projects/Git_projects/R_projects/R_Projects/Circular Economy Flow Chart.png")
+```
+
+As you can see all the leakages and injections in the **table 1** below,
+
+#### Table 1. Leakages and Injections
+**Leakages** |**Injections** 
+:-----:|:-----: 
+Imports|Exports
+Taxes|Government Spending
+Savings|Investment
+
+They play an important role in the economic growth because if all injections are greater than all leakages then the economy grows. On the other side, if all of the leakages are greater than the injections then the economy declines or shrinks which is the beginning of financial crisis.
+
+The government uses fiscal policy to prevent the economy from over and under growth using the fiscal policy instruments, government spendings (**injection**) and taxes (**leakage**). Similarly, the monetary policy through monetary policy instrument, interest rate, affect the savings (**leakages**) and investment (**injection**). The trade policy is used to effect the import (**leakages**) and export (**injections**). so, we can say that government plays an important role to make a balance among these injections and leakages to achieve macroeconomic objectives (economic growth, control over inflation and unemployment).
+
+Here, if government wants to increase taxes to reduce their budget deficit then they need to come up with export or investment promotion policies.
+
+---
+
+## GDP and It's Components
+
+GDP and its components are nothing but the part of **Circular Flow of Income**.
+
+
+
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
